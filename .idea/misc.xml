@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/drawable/flag_plant.xml" value="0.5255" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/drawable/flag_remove.xml" value="0.25" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/drawable/reveal_tile.xml" value="0.2140625" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/ghhhhhhhhhh.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/options.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/options_marked.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/options_not_marked.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/options_revealed.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/play_screen.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/galar/AndroidStudioProjects/mineSweeper/app/src/main/res/layout/spinner_item.xml" value="0.5541666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
