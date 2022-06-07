@@ -15,6 +15,7 @@ import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
 import androidx.core.view.animation.PathInterpolatorCompat
 import androidx.core.view.doOnLayout
+import gal.libs.themebutton.ThemeButton
 import java.util.*
 import kotlin.math.abs
 
@@ -66,7 +67,7 @@ class GameView : View {
             playScreen = mainLayout.findViewById(R.id.playAgainScreen)
             playButton = mainLayout.findViewById(R.id.playAgainButton)
             playButton.text = "START GAME"
-            playButton.setAction { removePlayScreen() }
+            playButton.action = { removePlayScreen() }
             regOptions = LayoutInflater.from(context).inflate(R.layout.options, mainLayout, false)
             markedOptions = LayoutInflater.from(context).inflate(R.layout.options_marked, mainLayout, false)
             revealedOptions = LayoutInflater.from(context).inflate(R.layout.options_revealed, mainLayout, false)
@@ -382,13 +383,13 @@ class GameView : View {
         }
     }
 
-    private fun iterateAll(action: (Tile, column: Int, row: Int) -> Unit) {
+    private inline fun iterateAll(crossinline action: (Tile, column: Int, row: Int) -> Unit) {
         for (x in tiles.indices)
             for (y in tiles[x].indices)
                 action(tiles[x][y], x, y)
     }
 
-    private fun iterateOptions( action : (View) -> Unit ) {
+    private inline fun iterateOptions(crossinline action : (View) -> Unit ) {
         action(regOptions)
         action(markedOptions)
         action(revealedOptions)
@@ -492,10 +493,10 @@ class GameView : View {
                 fillPaint.color = Color.rgb(185, 221, 119)
                 canvas?.drawRect((x + 1F) * unitSize, (y + 0F) * unitSize, (x + 2F) * unitSize, (y + 1F) * unitSize, fillPaint)
             }
-            if (t.isMine) {
-                fillPaint.color = Color.BLACK
-                canvas?.drawRect((x + 1F) * unitSize, (y + 0F) * unitSize, (x + 2F) * unitSize, (y + 1F) * unitSize, fillPaint)
-            }
+//            if (t.isMine) {
+//                fillPaint.color = Color.BLACK
+//                canvas?.drawRect((x + 1F) * unitSize, (y + 0F) * unitSize, (x + 2F) * unitSize, (y + 1F) * unitSize, fillPaint)
+//            }
             else if (t.isRevealed) t.draw(canvas, fillPaint, fm)
         }
         canvas?.drawRect(focusedSquare, strokePaint)
